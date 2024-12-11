@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  background-color: #202125;
+  color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  row-gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  column-gap: 0.75rem;
+  text-align: center;
+  border: 1px solid;
+  padding: 0 1rem 0 0;
+}
+
+.header-kid1 {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  column-gap: 0.75rem;
+  padding: 0 .2rem;
+}
+
+.hgk1-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: .5rem;
+}
+
+.hgk1 {
+  width: fit-content;
+  height: auto;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #d52d24;
+}
+
+.yellow {
+  background-color: #ffb800;
+}
+
+.red-dot {
+  background-color: #d52d24;
+}
+
+.blue {
+  background-color: #1d71ea;
+}
+
+.header-kid2 {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: .5rem;
+  background-color: #3c4043;
+  border-radius: .5rem;
+}
+
+.left {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: #3c4043;
+  column-gap: 1rem;
+}
+
+.presenter-pic {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.pp {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.presenter {
+  width: fit-content;
+  height: auto;
+}
+
+.presenter p {
+  background-color: #3c4043;
+  font-size: .9rem;
+}
+
+/* .stop-presenting {
+  width: fit-content;
+  height: auto;
+} */
+
+.body-container {
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  column-gap: 1rem;
+  position: relative;
+}
+
+.video-content {
+  width: 75%;
+  height: auto;
+  padding: 1.5rem 0;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.participants-container {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  row-gap: .75rem;
+  column-gap: .8rem;
+  position: relative;
+}
+
+/* ABSOLUTE POSITIONING PROBS NEEDED */
+.participant {
+  width: 48%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; 
+  row-gap: .5rem;
+  background-color: #333537;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.mic-slash {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  border-radius: 50%;
+  padding: .5rem .3rem;
+  font-size: .8rem;
+  position: relative;
+  top: -3px;
+  left: 90px;
+}
+
+.fa-microphone-slash {
+  width: fit-content;
+  height: auto;
+  border-radius: 50%;
+}
+
+.diff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.op {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #333537;
+}
+
+.ptp-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.ptp-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ptpp {
+  width: 60px;
+  height: 60px;
+}
+
+.ptpp2 {
+  margin-left: -1rem;
+}
+
+.name {
+  width: fit-content;
+  height: auto;
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: -70px;
+} 
+
+.name p {
+  background-color: #333537;
+  font-size: .75rem;
+}
+
+.footer-container {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fc1 {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: .75rem .75rem .75rem 0;
+  font-size: .85rem;
+}
+
+.timestamp, .slash, .code {
+  width: fit-content;
+}
+
+.fc2, .fc3 {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  column-gap: .5rem;
+}
+
+.fc2-kids {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.carets {
+  width: fit-content;
+}
+
+.red-square-button {
+  padding: .7rem 0.85rem;
+  border-radius: .5rem;
+  background-color: #800020;
+  border: none;
+}
+
+.mic {
+  padding: .7rem;
+  background-color: #9E6562;
+  margin-left: -.4rem;
+}
+
+.fa-caret-up {
+  background-color: #800020;
+}
+
+.ms {
+  background-color: #9E6562;
+}
+
+.highlighted-button, .ellipsis {
+  padding: .7rem 1rem;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;  
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;  
+  background-color: #333537;
+  border: none;
+}
+
+.fa-arrow-up-from-bracket {
+  background-color: #333537;
+}
+
+.ellipsis {
+  padding: .7rem;
+}
+
+.red-button {
+  padding: .6rem 1rem;
+  border-top-left-radius: 7rem;
+  border-bottom-left-radius: 7rem;  
+  border-top-right-radius: 7rem;
+  border-bottom-right-radius: 7rem;  
+  background-color: #d52d24;
+  border: none;
+}
+
+.rb {
+  background-color: #d52d24;
+  border: none;
+}
+
+.rb img {
+  background-color: #d52d24;
+}
+
+.fc3-kids {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.fc3k-button {
+  width: fit-content;
+  padding: 0 .5rem 0 .5rem;
+  border: none;
+}
+
+.fc3k-b {
+  width: fit-content;
+  padding: 0 .5rem 0 .5rem;
+  border: none;
+}
+
+.number-of-callers {
+  width: fit-content;
+}
+
+.number-of-callers button {
+  width: fit-content;
+  font-size: .6rem;
+  padding: 0.1rem .4rem;
+  background-color: #333537;
+  border: none;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
