@@ -1,0 +1,1 @@
+This is a recreation of the Google Meet UI from the perspective of a guest on the call. In this context, the host/presenter has automatically turened iff the ability for guests to turn on the microphones or cameras
